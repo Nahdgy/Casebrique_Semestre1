@@ -3,19 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - NormalBarre
+  - SpecialBarre
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Destroy
   - Water
   - UI
   - Plateau
   - Ball
-  - 
-  - 
-  - 
+  - Power
+  - BallSpe
+  - Brick
   - 
   - 
   - 

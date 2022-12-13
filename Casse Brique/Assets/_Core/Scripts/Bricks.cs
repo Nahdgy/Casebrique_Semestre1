@@ -4,15 +4,36 @@ using UnityEngine;
 
 public class Bricks : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private Sprite[] newForm;
+    private SpriteRenderer baseForm;
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField]
+    private int nbMaxTouch;
+    [SerializeField]
+    private int nbTouch;
+    [SerializeField]
+    private int ball = 7;
+    [SerializeField]
+    private int ballSpé = 9;
+    [SerializeField]
+    private int state;
+   
+
+//Normal bricks health and death by collision.  
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if(collision.gameObject.layer==ball)
+        {
+            nbTouch++;
+        }
+        if (collision.gameObject.layer == ballSpé)
+        {
+            nbTouch++;
+        }
+        if (nbTouch >= nbMaxTouch)
+        {
+            Destroy(gameObject);
+        }
     }
 }

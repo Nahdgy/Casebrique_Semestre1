@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 7186190542828506212}
   - component: {fileID: 5210235388493149920}
   - component: {fileID: 2852587821823174328}
-  m_Layer: 0
+  - component: {fileID: 1520096341099787535}
+  m_Layer: 10
   m_Name: Brique1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,3 +112,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.84, y: 1.28}
   m_EdgeRadius: 0
+--- !u!114 &1520096341099787535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4702051439811025416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59de7cbf9d150244fa69b6ecbbd793fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nbMaxTouch: 1
+  nbTouch: 0
+  ball: 7
+  "ballSp\xE9": 9
